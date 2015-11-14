@@ -1,5 +1,11 @@
 package client;
 
+
+import com.example.norbert.championselect.ChampionList;
+
+import retrofit.Callback;
+import retrofit.http.GET;
+
 /**
  * Created by Norbert on 11/14/2015.
  */
@@ -9,6 +15,6 @@ public class LeagueClient {
 
     public interface LCS {
         @GET("/api/lol/na/v1.2/champion")
-        void getChampList(Callback<ChampList> cb);
+        void getChampList(Callback<ChampionList> cb);
     }
 }
